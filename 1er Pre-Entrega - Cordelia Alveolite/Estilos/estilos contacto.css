@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/eb496abla0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-forms">
+        <div class="info-form">
+            <h2>Contactame</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus veniam commodi 
+                quasi ab aut, iusto ex ducimus porro? Iure culpa veritatis necessitatibus enim praesentium quis deserunt deleniti fugit dolorum eum.</p>
+            <a href="#"><i class="fa fa-phone"></i> 247-986-471</a>
+            <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Ciudad, País</a>
+        </div>
+        <form action="#" autocomplete="off">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+            <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+            <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+            <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar">
+        </form>
+    </div>
+</body>
+</html>
