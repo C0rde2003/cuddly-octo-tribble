@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Pagina web basica</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos del encabezado */
+        .head {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Estilos de las secciones de contenido */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            color: #333;
+        }
+
+        .btn-home .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .box i {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos del footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#">logo</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#">inicio</a>
+            <a href="#">acerca de mi</a>
+            <a href="#">contacto</a>
+            <a href="#">novelas</a>
+            <a href="#">comentarios</a>
+        </nav>
+    </div>
+
+    <header class="content header">
+        <h2 class="title">inicio</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi soluta inventore corrupti dolor
+            tenetur pariatur quam quas placeat eum? Explicabo numquam harum laudantium accusamus at recusandae
+            libero, iste velit.
+        </p>
+        <div class="btn-home">
+            <a href="#" class="btn">donde leerlas</a>
+        </div>
+    </header>
+
+    <section class="content sau">
+        <h2 class="title">Acerca de mi</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus accusamus aperiam nulla veniam
+            excepturi similique enim, quibusdam, odit animi sequi dignissimos fugiat vel asperiores quam quisquam iusto
+            illo dolorum?
+        </p>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>lorem</h3>
+                <p>iusto illo dolorum?</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                <h3>lorem</h3>
+                <p>iusto illo dolorum?</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-android"></i>
+                <h3>lorem</h3>
+                <p>iusto illo dolorum?</p>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="btn">Saber mas</a>
+        </div>
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Acerca de ellos</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum, quibusdam mollitia, eaque quia
+            accusantium facere neque ipsam voluptate autem optio quasi id reprehenderit quod itaque possimus nisi
+            cumque laborum.
+        </p>
+        <a href="#" class="btn">saber mas</a>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">fecha de publicacion</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum, quibusdam mollitia, eaque quia
+                accusantium facere neque ipsam voluptate autem optio quasi id reprehenderit quod itaque possimus nisi
+                cumque laborum.
+            </p>
+            <a href="#" class="btn">lecturas/vistas</a>
+        </article>
+    </section>
+
+    <section class="content contact">
+        <h2 class="title">Contacto</h2>
+        <p>9893721694</p>
+        <figure class="fictional couple">
+            <img src="./assets/img/E-zmjWZWYAILhf-.jpg" height="220px" width="30%" alt="Charleimy">
+        </figure>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sitio Web de una no tan famosa escritora. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

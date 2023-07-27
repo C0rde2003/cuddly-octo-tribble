@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Formulario de contacto</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-forms {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .info-form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .info-form a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .info-form a:hover {
+            color: #007bff;
+        }
+
+        .formulario-suscripcion {
+            margin-top: 20px;
+        }
+
+        /* Estilos para el formulario de contacto */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .btn-enviar {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-enviar:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para secciones adicionales */
+        .redes-sociales a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .chat-en-vivo {
+            margin-top: 20px;
+        }
+
+        .mapa-interactivo {
+            margin-top: 20px;
+        }
+
+        .testimonios {
+            margin-top: 20px;
+        }
+
+        .testimonios h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonios p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        /* Estilos para el formulario de suscripción */
+        .formulario-suscripcion h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .formulario-suscripcion input[type="email"],
+        .formulario-suscripcion input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario-suscripcion input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .formulario-suscripcion input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-forms">
+        <div class="info-form">
+            <h2>Contacto</h2>
+            <p>Proporciona tus detalles de contacto y te responderemos pronto.</p>
+            <a href="tel:+247986471"> <i class="fa fa-phone"></i> 247-986-471</a>
+            <a href="mailto:email@tudominio.com"> <i class="fa fa-envelope"></i> email@tudominio.com</a>
+            <a href="#"> <i class="fa fa-map-marked"></i> Ciudad, País</a>
+
+            <!-- Redes Sociales (Ejemplo) -->
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/tuempresa" target="_blank">Facebook</a>
+                <a href="https://twitter.com/tuempresa" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <form action="procesar_formulario.php" method="POST" autocomplete="off">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" class="campo" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" class="campo" required>
+
+            <!-- Agregamos asunto del mensaje -->
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Ingresa el asunto del mensaje" class="campo">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje" required></textarea>
+            
+            <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar">
+        </form>
+
+        <!-- Testimonios y reseñas (Ejemplo) -->
+        <div class="testimonios">
+            <h3>Testimonios</h3>
+            <p>"Excelente servicio, lo recomiendo totalmente." - Cliente Satisfecho</p>
+            <p>"Rápida respuesta y atención al cliente de primera." - Otro Cliente Feliz</p>
+        </div>
+
+        <!-- Formulario de suscripción (Ejemplo) -->
+        <div class="formulario-suscripcion">
+            <h3>Suscríbete a nuestro boletín</h3>
+            <form action="procesar_suscripcion.php" method="POST" autocomplete="off">
+                <input type="email" name="correo_suscripcion" placeholder="Ingresa tu correo electrónico" required>
+                <input type="submit" name="suscribir" value="Suscribirme">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
